@@ -6,14 +6,14 @@ import mysql.connector
 app = Flask(__name__)
 CORS(app)
 CORS(app, resources={r"/*": {"origins": "*"}})
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = '1234'
-app.config['MYSQL_DB'] = 'customer'
-#app.config['MYSQL_HOST'] = 'database-1-instance-1.cwqlykfccxgl.us-east-1.rds.amazonaws.com'
-#app.config['MYSQL_USER'] = 'admin'
-#app.config['MYSQL_PASSWORD'] = '41RcW9yTn6DdbQZg8Kf8'
-#app.config['MYSQL_DB'] = 'database-1'
+#app.config['MYSQL_HOST'] = 'localhost'
+#app.config['MYSQL_USER'] = 'root'
+#app.config['MYSQL_PASSWORD'] = '1234'
+#app.config['MYSQL_DB'] = 'customer'
+app.config['MYSQL_HOST'] = 'database-1-instance-1.cwqlykfccxgl.us-east-1.rds.amazonaws.com'
+app.config['MYSQL_USER'] = 'admin'
+app.config['MYSQL_PASSWORD'] = '41RcW9yTn6DdbQZg8Kf8'
+app.config['MYSQL_DB'] = 'database-1'
 
 conn = mysql.connector.connect(
     host=app.config['MYSQL_HOST'],
