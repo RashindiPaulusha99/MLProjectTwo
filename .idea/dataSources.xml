@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="taskreminder@database-1.cpwdrdfsy4f3.eu-north-1.rds.amazonaws.com" uuid="5080b9ad-7fea-4f69-a15e-45f6b4c30b6f">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://database-1.cpwdrdfsy4f3.eu-north-1.rds.amazonaws.com:3306/taskreminder</jdbc-url>
+    </data-source>
+  </component>
+</project>
